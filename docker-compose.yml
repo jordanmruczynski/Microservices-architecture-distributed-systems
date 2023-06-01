@@ -27,13 +27,12 @@ services:
     networks:
       - postgres
     restart: unless-stopped
-#  zipkin:
-#    image: openzipkin/zipkin
-#    container_name: zipkin
-#    ports:
-#      - "9411:9411"
-#    networks:
-#      - spring
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      # Port used for the Zipkin UI and HTTP Api
+      - 9411:9411
 #  rabbitmq:
 #    image: rabbitmq:3.9.11-management-alpine
 #    container_name: rabbitmq

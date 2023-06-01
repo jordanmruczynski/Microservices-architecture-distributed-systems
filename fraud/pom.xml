@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>customer</artifactId>
+    <artifactId>fraud</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -49,6 +49,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
